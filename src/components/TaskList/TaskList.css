@@ -1,0 +1,27 @@
+.task-category{
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.task-list{
+    display: flex;
+    gap: 1rem;
+
+    button{
+        margin: 0.5rem 0;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .task-list-pending{
+        width: 80%;
+    }
+    .task-list-completed{
+        width: 20%;
+        li{
+            width: 100%;
+            text-decoration: line-through;
+            color: gray !important;
+        }
+    }
+}
