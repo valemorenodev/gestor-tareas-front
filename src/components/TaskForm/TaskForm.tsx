@@ -101,7 +101,7 @@ const TaskForm = ({ onCreate, onUpdate, editingTask, cancelEdit }: Props) => {
       />
       {errors.description && <span className="error">{errors.description}</span>}
 
-      <select name="category" value={formData.category} onChange={handleChange}>
+      <select name="category" aria-label="Categoría" value={formData.category} onChange={handleChange}>
         <option value="">Selecciona categoría</option>
         {categories.map(c => <option key={c} value={c}>{c}</option>)}
       </select>
