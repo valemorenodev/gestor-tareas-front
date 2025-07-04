@@ -1,0 +1,50 @@
+.task-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #222;
+  margin-bottom: 1rem;
+}
+
+.task-item span {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-item button {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+  background: transparent;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 6px;
+  margin-top: 0.3rem;
+}
+
+.task-item button:hover {
+  background-color: #333;
+  border-color: #777;
+}
+
+@media screen and (min-width: 768px) {
+  .task-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .task-item span {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .task-item button {
+    margin-top: 0;
+    margin-left: 0.5rem;
+  }
+}

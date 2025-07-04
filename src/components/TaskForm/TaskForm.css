@@ -1,36 +1,54 @@
-.task-form{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
-    width: 100%;
-    input, select {
-        padding: 0.5em;
-        border-radius: 4px;
-        border: 1px solid #ccc;
-        background-color: #1b1b1b;
-        color: #fff;
-    }
-    
-button {
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: #111;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+.task-form input,
+.task-form select {
+  padding: 0.5em;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background-color: #1b1b1b;
+  color: #fff;
+  width: 100%;
+}
+
+.task-form button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 1px solid #e564ff;
   padding: 0.5em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
   background-color: #181717;
   cursor: pointer;
-  transition: border-color 0.25s;
-  border-color: #e564ff;
 }
-button:hover {
+
+.task-form button:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+
+@media screen and (min-width: 768px) {
+  .task-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .task-form input,
+  .task-form select {
+    flex: 1 1 45%;
+  }
+
+  .task-form button {
+    flex: 1 1 100%;
+    margin-top: 1rem;
+  }
 }
