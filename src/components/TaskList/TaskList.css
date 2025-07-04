@@ -6,6 +6,7 @@
 .task-list{
     display: flex;
     gap: 1rem;
+    width: 100%;
 
     button{
         margin: 0.5rem 0;
@@ -14,10 +15,10 @@
         cursor: pointer;
     }
     .task-list-pending{
-        width: 80%;
+        width: 150%;
     }
     .task-list-completed{
-        width: 20%;
+        width: 50%;
         li{
             width: 100%;
             text-decoration: line-through;
