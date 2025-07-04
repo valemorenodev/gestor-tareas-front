@@ -17,8 +17,10 @@ const TaskItem = ({ task, onToggle, onDelete, onEdit }: Props) => {
         onChange={() => onToggle(task._id!, task.state !== 'terminada')}
       />
       <span><strong>{task.title}</strong><p> - {task.description}</p></span>
-      <button onClick={() => onEdit(task)}>✏️ Editar</button>
-      <button onClick={() => onDelete(task._id!)}>🗑️ Eliminar</button>
+      <div>
+        <button onClick={() => onEdit(task)}>✏️ Editar</button>
+        <button onClick={() => onDelete(task._id!)}>🗑️ Eliminar</button>
+      </div>
     </li>
   );
 };

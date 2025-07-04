@@ -4,6 +4,9 @@
   width: 100%;
   gap: 2rem;
   padding: 1rem;
+  hr{
+    width: 100%;
+  }
 }
 
 .task-list-pending,
@@ -34,6 +37,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    hr{
+      width: 0%;
+      height: 100vh;
+    }
   }
 
   .task-list-pending {
